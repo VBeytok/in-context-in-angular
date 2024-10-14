@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="titleText" datatype="html">
+        <source>Crowdin HTML Sample &quot;<x id="INTERPOLATION" equiv-text="{{ title }}"/>&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8856905278208146821" datatype="html">
+        <source> <x id="ICU" equiv-text="{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred
+        profiles} other {My profiles}}" xid="4446700663221796900"/> </source>
+        <translation> <x id="ICU" equiv-text="{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred profiles} other {My profiles}}" xid="4446700663221796900"/> </translation>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25,29</context>
+        </context-group>
+        <note priority="1" from="description">varSelectText</note>
+      </trans-unit>
+      <trans-unit id="4446700663221796900" datatype="html">
+        <source>{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred
+        profiles} other {My profiles}}</source>
+        <translation>{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred profiles} other {My profiles}}</translation>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interpolationText" datatype="html">
+        <source> Profile <x id="START_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION&quot; equiv-text=&quot;{{ profile.name }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Profile ID <x id="START_TAG_X_1" ctype="x-x_1" equiv-text="&lt;x id=&quot;INTERPOLATION_1&quot; equiv-text=&quot;{{ profile.fullyFormattedID }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Balance <x id="START_TAG_X_2" ctype="x-x_2" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/></source>
+        <tramslation> Profile <x id="START_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION&quot; equiv-text=&quot;{{ profile.name }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Profile ID <x id="START_TAG_X_1" ctype="x-x_1" equiv-text="&lt;x id=&quot;INTERPOLATION_1&quot; equiv-text=&quot;{{ profile.fullyFormattedID }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Balance <x id="START_TAG_X_2" ctype="x-x_2" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/></tramslation>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30,35</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,274 +1,150 @@
 <!DOCTYPE html>
 
-<html lang="ach">
-<head>
-    <title>crwdns927233:0crwdne927233:0</title>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500&amp;subset=korean" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<html lang="en">
+  <head>
+    <title i18n="@@pageTitle">HTML Sample File</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500&amp;subset=korean"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.component.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style></style>
+  </head>
 
-        * {
-            box-sizing: border-box;
-        }
+  <body>
+    <div class="header">
+      <h1 i18n="@@titleText">Crowdin HTML Sample "{{ title }}"</h1>
+      <p i18n="@@responsiveText">
+        A <b>responsive</b> website created for testing purposes.
+      </p>
+      <p i18n="@@varSelectText">
+        {VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred
+        profiles} other {My profiles}}
+      </p>
 
-        body {
-            margin: 0;
-            background: transparent;
-            color: rgba(40,44,52,0.87);
-            font-family: "Noto Sans KR", sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        h1, h2, h3, h4, h5 {
-            color: #050C1A;
-            font-family: "Poppins",sans-serif;
-            font-weight: 500;
-        }
-
-
-        .header {
-            padding: 80px;
-            text-align: center;
-            color: #050c1a;
-            background-color: #eceff1;
-            background-image: url(https://blog.crowdin.com/assets/1920-min.jpg);
-            background-position-y: -100px;
-            background-position-x: center;
-            background-repeat: repeat;
-            background-size: cover;
-        }
-
-        .header h1 {
-            font-weight: 600;
-            display: inline-block;
-            background: #fff;
-            padding: 1rem 1.5rem;
-            border-radius: .5rem;
-            color: #2e3340;
-            font-size: 40px;
-        }
-
-        .header h1 + p {
-            margin-top: 0
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #2e3340;
-            position: sticky;
-            position: -webkit-sticky;
-            top: 0;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a.right {
-            float: right;
-        }
-
-        .navbar a:hover {
-            background-color: rgba(255, 255, 255, .20);
-            color: #ffffff;
-        }
-
-
-        .navbar a.active {
-            background-color: #43A047;
-            color: #ffffff;
-        }
-
-        .float-left {
-            float: left !important;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-
-
-        .side {
-            -ms-flex: 30%;
-            flex: 30%;
-            background-color: rgba(236, 239, 241, 0.5);
-            padding: 20px;
-        }
-
-
-        .main {
-            -ms-flex: 70%;
-            flex: 70%;
-            background-color: white;
-            padding: 20px;
-        }
-
-        .fakeimg {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background:  linear-gradient(138.98deg, rgba(67, 160, 70, 0.1) 6.95%, rgba(30, 136, 229, 0.1) 100%);
-            width: 100%;
-            padding: 20px;
-            max-width: 100%;
-            margin: 1.5rem 0;
-            border-radius: .5rem;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1),0px 10px 40px rgba(0,0,0,0.1);
-            color: rgba(40,44,52,0.54);
-        }
-
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ECEFF1;
-            border-top: 1px solid rgba(0,0,0, .1)
-        }
-
-        .footer .clearfix {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .footer ul {
-            list-style: none;
-            margin-left: 0;
-        }
-        .footer ul {
-            margin: 1rem 0;
-        }
-
-        .list-inline {
-            padding-left: 0;
-            list-style: none;
-        }
-
-        .list-inline-item {
-            display: inline-block;
-        }
-
-        .list-inline-item:not(:last-child) {
-            margin-right: .5rem;
-        }
-        .crowdin-footer__bottom__link {
-            color: rgba(40,44,52,0.87);
-            font-size: .875rem;
-            font-weight: 500;
-            line-height: 2.125rem;
-        }
-
-        .footer .form-control {
-            display: block;
-            width: 100%;
-            height: calc(1.75rem + 1.25rem);
-            padding: .625rem 1rem;
-            font-family: "Noto Sans KR",sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.75;
-            color: #495057;
-            background-color: #fff;
-            background-clip: padding-box;
-            border: 1px solid rgba(0,0,0,0.1);
-            border-radius: .25rem;
-            transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
-        }
-
-        @media screen and (max-width: 700px) {
-            .row {
-                flex-direction: column;
-            }
-        }
-
-        @media screen and (max-width: 400px) {
-            .navbar a {
-                float: none;
-                width: 100%;
-            }
-        }
-    </style>
-
-    <script type="text/javascript">
-      var _jipt = [];
-      _jipt.push(['project', '7da6d433eda3c9aeb9f96faf75f71c90']);
-      _jipt.push(['domain', 'beytok']);
-    </script>
-    <script type="text/javascript" src="//cdn.crowdin.com/jipt/jipt.js"></script>
-
-</head>
-
-<body>
-<div class="header">
-    <h1>crwdns927235:0{{title}}crwdne927235:0</h1>
-    <p>crwdns927237:0crwdne927237:0</p>
-    <p>crwdns927239:0VAR_SELECT=&#123;VAR_SELECT&#125;crwdne927239:0</p>
-
-    <p>crwdns927241:0{{ profile.name }}crwdnd927241:0{{ profile.fullyFormattedID }}crwdne927241:0 <x id="INTERPOLATION_2" equiv-text="{{ profile.balance }}"/></p>
-</div>
-
-<div class="navbar">
-    crwdns927243:0crwdne927243:0
-</div>
-
-<div class="row">
-    <div class="side">
-        <h2>crwdns927245:0crwdne927245:0</h2>
-        <h5>crwdns927247:0crwdne927247:0</h5>
-        <div class="fakeimg" style="height:200px;">crwdns927249:0crwdne927249:0</div>
-        <p>crwdns927251:0crwdne927251:0 crwdns927253:0crwdne927253:0</p>
-        <h3>crwdns927255:0crwdne927255:0</h3>
-        <p>crwdns927257:0crwdne927257:0</p>
-        <div class="fakeimg" style="height:60px;">crwdns927259:0crwdne927259:0</div><br>
-        <div class="fakeimg" style="height:60px;">crwdns927261:0crwdne927261:0</div><br>
-        <div class="fakeimg" style="height:60px;">crwdns927263:0crwdne927263:0</div>
+      <p i18n="@@interpolationText">
+        Profile <x id="INTERPOLATION" equiv-text="{{ profile.name }}" /> Profile
+        ID
+        <x id="INTERPOLATION_1" equiv-text="{{ profile.fullyFormattedID }}" />
+        Balance <x id="INTERPOLATION_2" equiv-text="{{ profile.balance }}" />
+      </p>
+      <button (click)="showLocalizedMessage()">{{ buttonText }}</button>
+      <p *ngIf="localizedMessage">{{ localizedMessage }}</p>
     </div>
-    <div class="main">
-        <h2>crwdns927265:0crwdne927265:0</h2>
-        <h5>crwdns927267:0crwdne927267:0</h5>
-        <div class="fakeimg" style="height:200px;">crwdns927269:0crwdne927269:0</div>
 
-        <p>crwdns927271:0crwdne927271:0</p>
-        <br>
-        <h2>crwdns927273:0crwdne927273:0</h2>
-        <h5>crwdns927275:0crwdne927275:0</h5>
-        <div class="fakeimg" style="height:200px;">crwdns927277:0crwdne927277:0</div>
-
-        <p>crwdns927279:0crwdne927279:0 crwdns927281:0crwdne927281:0 crwdns927283:0crwdne927283:0</p>
+    <div class="navbar">
+      <a href="#" class="active" i18n="@@homeLink">Home</a>
+      <a href="#" i18n="@@servicesLink">Services</a>
+      <a href="#" i18n="@@aboutUsLink">About us</a>
+      <a href="#" class="right" i18n="@@contactUsLink">Contact us</a>
     </div>
-</div>
 
-<footer class="footer">
-    <div class="container-fluid">
-        <div class="clearfix">
-            <div class="float-left">
-                <ul class="text-left list-inline">
-                    <li class="list-inline-item">crwdns927285:0crwdne927285:0</li>
-                    <li class="list-inline-item">
-                        <a class="crowdin-footer__bottom__link" href="crwdns927287:0crwdne927287:0">crwdns927289:0crwdne927289:0</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="float-right d-none d-sm-block">
-                <form class="navbar-form ml-auto" action="/search/" method="get" style="margin: 1rem 0;">
-                    <div class="form-group mb-0 search-input-holder">
-                        <input required="" class="form-control" name="q" placeholder="crwdns927291:0crwdne927291:0" style="height: 2.2rem; padding: 0.1rem 1rem">
-                    </div>
-                </form>
-            </div>
+    <div class="row">
+      <div class="side">
+        <h2 i18n="@@aboutUsHeader">About us</h2>
+        <h5 i18n="@@meetOurTeamHeader">Meet our team</h5>
+        <div class="fakeimg" style="height: 200px" i18n="@@imageText">
+          Image
         </div>
+        <p i18n="@@companyDescription">
+          Our company is diverse in every meaning of this word. We have teams
+          with different expertise to set you up with the right experts
+          depending on your business goals.
+        </p>
+        <h3 i18n="@@marketingPassionHeader">Marketing is our passion</h3>
+        <p i18n="@@approachDescription">
+          Here's how we approach each new project
+        </p>
+        <div class="fakeimg" style="height: 60px" i18n="@@imageText">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px" i18n="@@imageText">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px" i18n="@@imageText">Image</div>
+      </div>
+      <div class="main">
+        <h2 i18n="@@marketingSolutionsHeader">
+          Marketing solutions for your business
+        </h2>
+        <h5 i18n="@@productDifferenceHeader">
+          We help great products make a difference in their niche.
+        </h5>
+        <div class="fakeimg" style="height: 200px" i18n="@@imageText">
+          Image
+        </div>
+
+        <p i18n="@@marketingGoalsDescription">
+          We work with companies across different industries to achieve their
+          marketing goals via various activities, including but not limited to
+          product and website launches, branding, advertising, communications,
+          media coverage, and social media presence.
+        </p>
+        <br />
+        <h2 i18n="@@businessGrowthHeader">
+          Strategies to fuel your business growth
+        </h2>
+        <h5 i18n="@@strategySelectionHeader">
+          Select the best strategy for your business
+        </h5>
+        <div class="fakeimg" style="height: 200px" i18n="@@imageText">
+          Image
+        </div>
+
+        <p i18n="@@strategyDescription">
+          It is crucial to go with the right marketing strategy, so we do our
+          best to guide you in the right direction. Depending on your business
+          purposes, we can develop a plan and implement it to acquire, engage,
+          and retain your customers. Our services are flexible, so we can work
+          on a project basis, provide consulting, or find a custom solution for
+          your business.
+        </p>
+      </div>
     </div>
-</footer>
-</body>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="clearfix">
+          <div class="float-left">
+            <ul class="text-left list-inline">
+              <li class="list-inline-item" i18n="@@footerCopyright">
+                © 2021 Crowdin
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="crowdin-footer__bottom__link"
+                  href="https://crowdin.com/contacts"
+                  i18n="@@footerContactLink"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="float-right d-none d-sm-block">
+            <form
+              class="navbar-form ml-auto"
+              action="/search/"
+              method="get"
+              style="margin: 1rem 0"
+            >
+              <div class="form-group mb-0 search-input-holder">
+                <input
+                  required=""
+                  class="form-control"
+                  name="q"
+                  placeholder="Search"
+                  style="height: 2.2rem; padding: 0.1rem 1rem"
+                  i18n-placeholder="@@searchPlaceholder"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

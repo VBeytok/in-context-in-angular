@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="ach">
+    <body>
+      <trans-unit id="pageTitle" datatype="html">
+        <source>HTML Sample File</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <target>crwdns927301:0crwdne927301:0</target>
+      </trans-unit>
+      <trans-unit id="titleText" datatype="html">
+        <source>Crowdin HTML Sample &quot;<x id="INTERPOLATION" equiv-text="{{ title }}"/>&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <target>crwdns927293:0{{ title }}crwdne927293:0</target>
+      </trans-unit>
+      <trans-unit id="responsiveText" datatype="html">
+        <source> A <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>responsive<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> website created for testing purposes. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <target>crwdns927303:0crwdne927303:0</target>
+      </trans-unit>
+      <trans-unit id="varSelectText" datatype="html">
+        <source>
+          <x id="ICU" equiv-text="{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred         profiles} other {My profiles}}" xid="4446700663221796900"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">27,31</context>
+        </context-group>
+        <target>crwdns927305:0VAR_SELECT={VAR_SELECT}crwdne927305:0</target>
+      </trans-unit>
+      <trans-unit id="4446700663221796900" datatype="html">
+        <source>{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred
+        profiles} other {My profiles}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+        <target>crwdns927297:0VAR_SELECT={VAR_SELECT}crwdne927297:0</target>
+      </trans-unit>
+      <trans-unit id="interpolationText" datatype="html">
+        <source> Profile <x id="START_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION&quot; equiv-text=&quot;{{ profile.name }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Profile ID <x id="START_TAG_X_1" ctype="x-x_1" equiv-text="&lt;x id=&quot;INTERPOLATION_1&quot; equiv-text=&quot;{{ profile.fullyFormattedID }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/> Balance <x id="START_TAG_X_2" ctype="x-x_2" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/><x id="CLOSE_TAG_X" ctype="x-x" equiv-text="&lt;x id=&quot;INTERPOLATION_2&quot; equiv-text=&quot;{{ profile.balance }}&quot; /&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32,37</context>
+        </context-group>
+        <target>crwdns927299:0{{ profile.name }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.fullyFormattedID }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.balance }}crwdne927299:0</target>
+      </trans-unit>
+      <trans-unit id="homeLink" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <target>crwdns927307:0crwdne927307:0</target>
+      </trans-unit>
+      <trans-unit id="servicesLink" datatype="html">
+        <source>Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <target>crwdns927309:0crwdne927309:0</target>
+      </trans-unit>
+      <trans-unit id="aboutUsLink" datatype="html">
+        <source>About us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <target>crwdns927311:0crwdne927311:0</target>
+      </trans-unit>
+      <trans-unit id="contactUsLink" datatype="html">
+        <source>Contact us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">45,48</context>
+        </context-group>
+        <target>crwdns927313:0crwdne927313:0</target>
+      </trans-unit>
+      <trans-unit id="aboutUsHeader" datatype="html">
+        <source>About us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <target>crwdns927315:0crwdne927315:0</target>
+      </trans-unit>
+      <trans-unit id="meetOurTeamHeader" datatype="html">
+        <source>Meet our team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <target>crwdns927317:0crwdne927317:0</target>
+      </trans-unit>
+      <trans-unit id="imageText" datatype="html">
+        <source> Image </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+        <target>crwdns927319:0crwdne927319:0</target>
+      </trans-unit>
+      <trans-unit id="companyDescription" datatype="html">
+        <source> Our company is diverse in every meaning of this word. We have teams with different expertise to set you up with the right experts depending on your business goals. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">56,59</context>
+        </context-group>
+        <target>crwdns927321:0crwdne927321:0</target>
+      </trans-unit>
+      <trans-unit id="marketingPassionHeader" datatype="html">
+        <source>Marketing is our passion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <target>crwdns927323:0crwdne927323:0</target>
+      </trans-unit>
+      <trans-unit id="approachDescription" datatype="html">
+        <source> Here&apos;s how we approach each new project </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+        <target>crwdns927325:0crwdne927325:0</target>
+      </trans-unit>
+      <trans-unit id="marketingSolutionsHeader" datatype="html">
+        <source> Marketing solutions for your business </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">72,74</context>
+        </context-group>
+        <target>crwdns927327:0crwdne927327:0</target>
+      </trans-unit>
+      <trans-unit id="productDifferenceHeader" datatype="html">
+        <source> We help great products make a difference in their niche. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">75,77</context>
+        </context-group>
+        <target>crwdns927329:0crwdne927329:0</target>
+      </trans-unit>
+      <trans-unit id="marketingGoalsDescription" datatype="html">
+        <source> We work with companies across different industries to achieve their marketing goals via various activities, including but not limited to product and website launches, branding, advertising, communications, media coverage, and social media presence. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">82,86</context>
+        </context-group>
+        <target>crwdns927331:0crwdne927331:0</target>
+      </trans-unit>
+      <trans-unit id="businessGrowthHeader" datatype="html">
+        <source> Strategies to fuel your business growth </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">89,91</context>
+        </context-group>
+        <target>crwdns927333:0crwdne927333:0</target>
+      </trans-unit>
+      <trans-unit id="strategySelectionHeader" datatype="html">
+        <source> Select the best strategy for your business </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">92,94</context>
+        </context-group>
+        <target>crwdns927335:0crwdne927335:0</target>
+      </trans-unit>
+      <trans-unit id="strategyDescription" datatype="html">
+        <source> It is crucial to go with the right marketing strategy, so we do our best to guide you in the right direction. Depending on your business purposes, we can develop a plan and implement it to acquire, engage, and retain your customers. Our services are flexible, so we can work on a project basis, provide consulting, or find a custom solution for your business. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">99,103</context>
+        </context-group>
+        <target>crwdns927337:0crwdne927337:0</target>
+      </trans-unit>
+      <trans-unit id="footerCopyright" datatype="html">
+        <source> © 2021 Crowdin </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+        <target>crwdns927339:0crwdne927339:0</target>
+      </trans-unit>
+      <trans-unit id="footerContactLink" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">122,124</context>
+        </context-group>
+        <target>crwdns927341:0crwdne927341:0</target>
+      </trans-unit>
+      <trans-unit id="searchPlaceholder" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <target>crwdns927343:0crwdne927343:0</target>
+      </trans-unit>
+      <trans-unit id="showMessageButton" datatype="html">
+        <source>Show Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <target>crwdns927345:0crwdne927345:0</target>
+      </trans-unit>
+      <trans-unit id="localizedMessage" datatype="html">
+        <source>This is a localized message shown after clicking the button.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <target>crwdns927347:0crwdne927347:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
