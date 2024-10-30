@@ -29,6 +29,10 @@ export class AppComponent {
       var _jipt = [];
       _jipt.push(['project', '7da6d433eda3c9aeb9f96faf75f71c90']);
       _jipt.push(['domain', 'beytok']);
+      
+      _jipt.push(['before_dom_insert', function(text, node, attribute) {
+        return text.replace(/\\[%/g, '{').replace(/%\\]/g, '}');
+      }]);
     `;
 
     document.head.appendChild(jiptConfig);

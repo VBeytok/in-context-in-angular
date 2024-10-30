@@ -16,7 +16,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
-        <target>crwdns927293:0{{ title }}crwdne927293:0</target>
+        <target>crwdns927293:0[%[% title %]%]crwdne927293:0</target>
       </trans-unit>
       <trans-unit id="responsiveText" datatype="html">
         <source> A <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>responsive<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> website created for testing purposes. </source>
@@ -34,7 +34,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">27,31</context>
         </context-group>
-        <target>crwdns927305:0VAR_SELECT={VAR_SELECT}crwdne927305:0</target>
+        <target>crwdns927305:0VAR_SELECT=[%VAR_SELECT%]crwdne927305:0</target>
       </trans-unit>
       <trans-unit id="4446700663221796900" datatype="html">
         <source>{VAR_SELECT, select, PERSONAL {My profiles} BUSINESS {Preferred
@@ -51,7 +51,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">32,37</context>
         </context-group>
-        <target>crwdns927299:0{{ profile.name }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.fullyFormattedID }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.balance }}crwdnd927299:0{{ profile.balance }}crwdne927299:0</target>
+        <target>crwdns927299:0[%[% profile.name %]%]crwdnd927299:0[%[% profile.balance %]%]crwdnd927299:0[%[% profile.fullyFormattedID %]%]crwdnd927299:0[%[% profile.balance %]%]crwdnd927299:0[%[% profile.balance %]%]crwdnd927299:0[%[% profile.balance %]%]crwdne927299:0</target>
       </trans-unit>
       <trans-unit id="homeLink" datatype="html">
         <source>Home</source>
