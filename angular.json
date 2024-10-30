@@ -4,10 +4,18 @@
   "newProjectRoot": "projects",
   "projects": {
     "jipt-in-angular": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "sv": "src/locale/messages.sv.xlf",
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
+
       "prefix": "app",
       "architect": {
         "build": {
@@ -16,20 +24,19 @@
             "outputPath": "dist/jipt-in-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
+            "sv": {
+              "localize": ["sv"]
+            },
+            "en": {
+              "localize": ["en"]
+            },
             "production": {
               "budgets": [
                 {
@@ -64,6 +71,12 @@
             },
             "development": {
               "buildTarget": "jipt-in-angular:build:development"
+            },
+            "en": {
+              "buildTarget": "jipt-in-angular:build:en"
+            },
+            "sv": {
+              "buildTarget": "jipt-in-angular:build:sv"
             }
           },
           "defaultConfiguration": "development"
@@ -77,18 +90,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }
